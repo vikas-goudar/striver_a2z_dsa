@@ -2,6 +2,13 @@
 	https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 */
 
+/*
+	increase 'right' which increases the window size and if we get an invalid substring we change 'left' to be just ahead of the charecter that is being repeated
+	we can do this by two ways
+		. using while to find that character
+		. storing the indices of occurence in a data structure
+*/
+
 #include <iostream>
 #include <unordered_set> 
 #include <unordered_map>
